@@ -23,7 +23,6 @@ function handleInput(input) {
     clear();
     userresponse = input.toString().trim();
     verifyUserResponse();
-    
 }
 
 
@@ -36,18 +35,18 @@ function computerGuess(){
 function verifyUserResponse(){
     if (userresponse === "h") {
     computerlow = computerguess + 1
-    say ("higher...")
+    say ("Higher...")
     computerGuess()
     }
 
     if (userresponse === "l") {
     computerhigh = computerguess - 1
-    say ("lower...")
+    say ("Lower...")
     computerGuess()
     }
 
     if (userresponse === "y") {
-    say ("YOU WIN!!!")
+    say ("Your number is " + computerguess + '!')
     exit()
     }
 }
