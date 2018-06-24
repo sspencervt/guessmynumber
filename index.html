@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="guess-core.js"></script>
+
+    <script> module = {} </script>
+    
+    <link type="text/css" rel="stylesheet" href="guess.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+    
+</head>
+<body>
+
+    <h1>Guess my number</h1>
+
+<div class="outputbox">
+    <pre id='output'></pre>
+</div>
+
+    <div id="buttongroup">
+        <button onclick="handleInput('h')">Higher</button>
+        <button onclick="handleInput('l')">Lower</button>
+        <button onclick="handleInput('y')">Correct! </button>
+        <button onclick="restart()">New Game</button>
+    </div>
+    
+<script>
+
+function say(message) {
+    document.getElementById('output').textContent += '\n' + message;
+}
+
+function exit() {
+    console.log('exit called')
+}
+
+function clear() {
+    document.getElementById('output').textContent = '';
+}
+
+function restart() {
+    clear();
+    gameStart();
+}
+
+gameStart();
+
+</script>
+
+</body>
+</html>

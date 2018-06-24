@@ -1,0 +1,53 @@
+body {
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Limelight', cursive;
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    
+}
+
+pre {
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.outputbox {
+    height: 200px;
+    text-align: center;
+}
+
+#buttongroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+button {
+    box-shadow: 10px;
+    display: flex;
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color: #c0c9c1;
+    border-radius: 25px;
+    opacity: .3;
+    color: slategray;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    justify-content: center;
+}
+
